@@ -1,0 +1,95 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.header {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .header__photo {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-image: url(../src/assets/images/avatar.jpg);
+        background-repeat: no-repeat;
+    }
+    .header__personal-data {
+        .name {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 90px;
+        }
+        .social-media {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+.main {
+    .panel {
+        .panel__button {
+            margin: 10px 0;
+        }
+        .panel__content {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid black;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+    }
+    .slider-conteiner {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        .slider {
+            transition: 0.6s ease-in-out;
+            .slide {
+                display: none;
+            }
+            .visible {
+                display: flex;
+                justify-content: center;
+                transition: 0.6s ease-in-out;
+            }
+        }
+        .prev {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: auto;
+            width: 15%;
+            cursor: pointer;
+            .arrow-left {
+                position: absolute;
+                top: 50%;
+                display: inline-block;
+                font-size: 90px;
+            }
+        }
+        .next {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: auto;
+            right: 0;
+            width: 15%;
+            cursor: pointer;
+            .arrow-right {
+                position: absolute;
+                top: 50%;
+                display: inline-block;
+                font-size: 90px;
+            }
+        }
+    }
+}

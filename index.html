@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SASS Quick Start</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__photo"></div>
+        <div class="header__personal-data">
+            <p class="name">Maria Solomina</p>
+            <a href="https://github.com/Vetra194" class="social-media">Github</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="panel">
+            <button class="panel__button">Education</button>
+            <div class="panel__content">
+                <ul>
+                    <li>Samara College of building and business, 2004-2007</li>
+                    <li>Samara State Univercity of Economics, 2007-2013</li>
+                    <li>Samara State Univercity of Economics, 2016-2018</li>
+                    <li>RSSchool courses, 2019-2020</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider-conteiner">
+            <div class="slider">
+                <div class="slide visible">
+                    <div class="description">Repair Design</div>
+                    <img src="src/assets/images/repair-design.jpg" alt="Repair Design">
+                </div>
+                <div class="slide">
+                    <div class="description">The yelow</div>
+                    <img src="src/assets/images/theyelow.jpg" alt="The yelow">
+                </div>
+            </div>
+            <div class="prev">
+                    <div class="arrow-left">&lt;</div>
+                </div>
+            <div class="next">
+                <div class="arrow-right">&gt;</div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>
